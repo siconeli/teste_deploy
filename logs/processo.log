@@ -1,0 +1,480 @@
+Level: INFO | Data: 2023-10-24 13:55:48,731 | Modulo: signals | Aviso: Usuario: "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 13:55:57,910 | Modulo: signals | Aviso: Usuario: "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 13:56:41,156 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 13:56:57,161 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 14:32:44,079 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 14:33:27,017 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 14:36:48,946 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 14:43:03,255 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 14:47:02,882 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 14:56:05,304 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 14:56:17,836 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:00:14,497 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:07:24,720 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:07:40,252 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:08:39,217 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-10-24 15:11:22,034 | Modulo: views | Aviso: Erro ao deletar objeto - View: ProcessoAdmDelete - Erro: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000211063020D0>>": "Auditoria.usuario" must be a "User" instance.
+Level: INFO | Data: 2023-10-24 15:11:35,797 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:17:01,283 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:17:05,887 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:19:14,664 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:28:37,641 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-10-24 15:45:53,826 | Modulo: views | Aviso: Erro ao deletar objeto - View: ProcessoAdmDelete - Erro: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000001D88FB9AF90>>": "Auditoria.usuario" must be a "User" instance.
+Level: INFO | Data: 2023-10-24 15:47:58,578 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 15:52:25,103 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 16:08:14,540 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 16:16:33,852 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 16:17:04,138 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 16:28:21,760 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 16:48:45,731 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 16:55:27,877 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-24 16:55:29,400 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-25 08:26:25,669 | Modulo: signals | Aviso: Usuario - "administrador", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-25 16:28:51,161 | Modulo: signals | Aviso: Usuario - "administrador", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-25 17:23:31,793 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-26 10:58:36,163 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 10:08:54,645 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 10:09:07,000 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:03:36,706 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:03:39,333 | Modulo: signals | Aviso: Usuario - "teste", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:03:48,579 | Modulo: signals | Aviso: Usuario - "teste", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:03:51,494 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:04:28,565 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:04:31,909 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:04:41,632 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:04:44,352 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:12:58,398 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:15:14,694 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:15:17,501 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:20:28,086 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:20:30,484 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:21:46,388 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:21:50,374 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:42:58,638 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:44:09,654 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 14:44:28,539 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 15:17:02,911 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 15:23:43,946 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 15:42:35,090 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 15:51:37,968 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 15:51:42,912 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 15:56:18,708 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 16:10:11,703 | Modulo: signals | Aviso: Usuario - "consultor", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 16:10:15,571 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 16:21:31,815 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-27 16:46:54,560 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-30 17:27:47,521 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-10-31 09:26:30,641 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-10-31 09:28:17,602 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: name 'pythoncom' is not defined
+Level: INFO | Data: 2023-10-31 15:40:15,417 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-10-31 15:40:32,437 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: name 'pythoncom' is not defined
+Level: INFO | Data: 2023-11-07 17:05:06,713 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 17:06:33,080 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 17:09:32,899 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 17:10:16,397 | Modulo: signals | Aviso: Usuario - "poliana", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 17:20:18,738 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 17:30:28,559 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 17:33:08,517 | Modulo: signals | Aviso: Usuario - "poliana", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 17:52:15,939 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 21:27:35,446 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 21:30:37,679 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 21:30:40,970 | Modulo: signals | Aviso: Usuario - "poliana", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 21:31:08,143 | Modulo: signals | Aviso: Usuario - "poliana", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-07 21:31:11,480 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 07:35:21,013 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:35:04,621 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:43:58,718 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:45:49,550 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:48:14,124 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:48:16,570 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:48:32,639 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:48:36,598 | Modulo: signals | Aviso: Usuario - "poliana", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 08:52:13,586 | Modulo: signals | Aviso: Usuario - "poliana", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 11:02:17,184 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 11:02:41,284 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-08 17:35:30,462 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-09 12:24:28,909 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-11-09 13:55:24,239 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 1.docx'
+Level: ERROR | Data: 2023-11-09 14:00:30,279 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 1.docx'
+Level: ERROR | Data: 2023-11-09 14:08:28,760 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 2.docx'
+Level: ERROR | Data: 2023-11-09 14:21:52,167 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 2.docx'
+Level: ERROR | Data: 2023-11-09 14:25:19,424 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 1.docx'
+Level: INFO | Data: 2023-11-09 14:26:22,864 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-11-09 14:26:37,275 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\TESTE1.docx'
+Level: ERROR | Data: 2023-11-09 14:33:31,563 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-09 14:35:04,621 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-09 14:35:27,363 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-09 14:41:15,934 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-09 14:46:33,960 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-09 14:53:46,676 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2023-11-09 14:55:17,354 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2023-11-09 14:55:54,983 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2023-11-09 14:56:12,526 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2023-11-09 14:56:18,158 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2023-11-09 14:57:16,417 | Modulo: views | Aviso: Erro ao mesclar PDF - View: MesclarPDFsView - Erro: [Errno 2] No such file or directory: 'C:\\Users\\webge\\Documents\\GitHub\\WebGer23\\media\\Arquivo\\RECURSO_AO_REPASSE_DO_INDICE_DE_ICMS_-_SÃO_GABRIEL_DO_OESTE_-_MS__ok_revisado_1.pdf'
+Level: ERROR | Data: 2023-11-09 16:50:15,747 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: ERROR | Data: 2023-11-09 17:30:59,251 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: ERRO:  estouro de campo numeric
+DETAIL:  Um campo com precisão 10, escala 2 deve arredondar para um valor absoluto menor do que 10^8.
+
+Level: ERROR | Data: 2023-11-09 17:31:12,116 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: ERRO:  estouro de campo numeric
+DETAIL:  Um campo com precisão 10, escala 2 deve arredondar para um valor absoluto menor do que 10^8.
+
+Level: ERROR | Data: 2023-11-09 17:31:38,350 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: ERRO:  estouro de campo numeric
+DETAIL:  Um campo com precisão 10, escala 2 deve arredondar para um valor absoluto menor do que 10^8.
+
+Level: ERROR | Data: 2023-11-09 17:41:33,342 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: ERROR | Data: 2023-11-09 17:42:44,256 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: ERROR | Data: 2023-11-09 17:43:10,533 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: ERROR | Data: 2023-11-09 17:43:36,435 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: ERROR | Data: 2023-11-09 17:44:22,295 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: ERROR | Data: 2023-11-09 17:46:44,516 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: ERROR | Data: 2023-11-09 17:49:14,635 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: ERRO:  valor é muito longo para tipo character varying(255)
+
+Level: INFO | Data: 2023-11-10 09:25:09,262 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-10 14:09:06,388 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-11-10 14:10:42,134 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 1.docx'
+Level: ERROR | Data: 2023-11-10 14:11:48,292 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 1.docx'
+Level: ERROR | Data: 2023-11-10 14:27:56,257 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 1.docx'
+Level: ERROR | Data: 2023-11-10 14:28:17,848 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF NÚMERO 1.docx'
+Level: ERROR | Data: 2023-11-10 14:29:09,995 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/PDF NÚMERO 1.docx'
+Level: ERROR | Data: 2023-11-10 14:30:10,025 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:30:47,011 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:31:57,360 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:32:48,074 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 14:33:44,528 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 14:35:24,785 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 14:36:49,776 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:40:16,663 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:41:12,614 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:41:32,689 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 14:45:30,033 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:45:52,778 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:47:54,505 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 14:48:24,579 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:49:00,146 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 14:57:20,868 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 14:59:56,428 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:00:29,254 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/Arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:07:10,051 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/Arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:09:26,724 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:18:11,509 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:19:02,755 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo\\PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:22:06,949 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:22:46,624 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/Arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:27:38,839 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'Arquivo\\PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:28:07,543 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:39:11,188 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:39:51,147 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 15:40:24,826 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 15:40:38,664 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: '/media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:40:46,266 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: '/media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 15:41:24,522 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: '/media/arquivo/PDF NÚMERO 2.docx'
+Level: ERROR | Data: 2023-11-10 15:42:14,231 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: '/media/arquivo/PDF NÚMERO 2.docx'
+Level: ERROR | Data: 2023-11-10 16:11:17,896 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: '\\10.0.0.3\\webger23\x07rquivo\\PDF1.docx'
+Level: ERROR | Data: 2023-11-10 16:11:57,352 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:15:31,841 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:17:04,316 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:18:00,251 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:19:04,372 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:19:20,786 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:23:29,793 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:23:55,767 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:25:17,054 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:25:59,618 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:27:47,854 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: (-2147221005, 'Cadeia de caracteres de classe inválida', None, None)
+Level: ERROR | Data: 2023-11-10 16:46:36,437 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 16:47:10,218 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 2] No such file or directory: 'media/arquivo/PDF1.docx'
+Level: ERROR | Data: 2023-11-10 16:53:38,212 | Modulo: views | Aviso: Erro ao mesclar PDF - View: MesclarPDFsView - Erro: [Errno 2] No such file or directory: '\\\\10.0.0.3\\webger23\\arquivo\\RECURSO_AO_REPASSE_DO_INDICE_DE_ICMS_-_SÃO_GABRIEL_DO_OESTE_-_MS__ok_revisado_1_KHWbXoX.pdf'
+Level: INFO | Data: 2023-11-10 17:06:31,496 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 07:43:25,277 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-11-13 07:44:17,047 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [WinError 1326] Nome de usuário ou senha incorretos: '\\\\10.0.0.3\\webger23\\'
+Level: ERROR | Data: 2023-11-13 07:44:32,071 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [WinError 1326] Nome de usuário ou senha incorretos: '\\\\10.0.0.3\\webger23\\'
+Level: INFO | Data: 2023-11-13 07:45:04,949 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 07:45:07,700 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 07:45:18,702 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 07:45:28,704 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-11-13 07:46:09,923 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [WinError 1326] Nome de usuário ou senha incorretos: '\\\\10.0.0.3\\webger23\\'
+Level: ERROR | Data: 2023-11-13 07:46:42,385 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [WinError 1326] Nome de usuário ou senha incorretos: '\\\\10.0.0.3\\webger23\\'
+Level: ERROR | Data: 2023-11-13 10:25:26,923 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: ERRO:  coluna "localizacao_processo" da relação "processo_andamentoadm" não existe
+LINE 1: ...ento", "valor_pago", "data_prazo", "funcionario", "localizac...
+                                                             ^
+
+Level: ERROR | Data: 2023-11-13 10:25:44,644 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: ERRO:  coluna "localizacao_processo" da relação "processo_andamentoadm" não existe
+LINE 1: ...ento", "valor_pago", "data_prazo", "funcionario", "localizac...
+                                                             ^
+
+Level: ERROR | Data: 2023-11-13 10:28:39,456 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: ERRO:  coluna "localizacao_processo" da relação "processo_andamentoadm" não existe
+LINE 1: ...ento", "valor_pago", "data_prazo", "funcionario", "localizac...
+                                                             ^
+
+Level: ERROR | Data: 2023-11-13 10:30:13,836 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: ERRO:  coluna "localizacao_processo" da relação "processo_andamentoadm" não existe
+LINE 1: ...ento", "valor_pago", "data_prazo", "funcionario", "localizac...
+                                                             ^
+
+Level: INFO | Data: 2023-11-13 10:34:08,352 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 10:58:37,701 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 11:20:27,586 | Modulo: signals | Aviso: Usuario - "None", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 11:20:29,863 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 15:21:33,137 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 15:21:38,278 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 15:33:07,365 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 15:33:10,721 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 16:27:21,733 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-13 16:36:00,968 | Modulo: views | Aviso: <QuerySet [<ProcessoAdm: 5353>, <ProcessoAdm: 1313>]>
+Level: INFO | Data: 2023-11-13 16:36:50,773 | Modulo: views | Aviso: 5353
+Level: INFO | Data: 2023-11-13 16:36:50,773 | Modulo: views | Aviso: 1313
+Level: INFO | Data: 2023-11-13 16:37:54,893 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:37:54,908 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:38:21,466 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:38:21,466 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:40:20,278 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:40:20,278 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:42:06,879 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:42:06,879 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:13,025 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:13,025 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:13,025 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:13,025 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:39,529 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:39,529 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:39,545 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:39,545 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:40,804 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:40,804 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:40,804 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:40,804 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:51,385 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 3 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:51,391 | Modulo: views | Aviso: <QuerySet [<AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>, <AndamentoAdm: Processo: 4/5645 Andamento: Execução Arquivo:  Ativo: True>]>
+Level: INFO | Data: 2023-11-13 16:49:51,393 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 16:49:51,394 | Modulo: views | Aviso: <QuerySet []>
+Level: INFO | Data: 2023-11-13 20:39:27,264 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-14 20:36:35,294 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 08:07:43,970 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 08:36:13,636 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 12:28:43,203 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:11:31,911 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:11:40,129 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:12:44,650 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:12:46,972 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:18:17,846 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:18:22,023 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:23:10,669 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:23:12,616 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:24:55,933 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 15:25:01,949 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 16:42:42,905 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 16:42:47,398 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 16:44:41,031 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-11-16 16:44:45,725 | Modulo: signals | Aviso: Usuario - "poliana", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-22 15:30:11,931 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2023-12-22 15:46:05,661 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [WinError 53] O caminho da rede não foi encontrado: '\\\\10.0.0.3\\webger23\\'
+Level: INFO | Data: 2023-12-22 16:07:14,500 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-23 11:01:27,364 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-23 21:36:46,140 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-23 21:36:51,734 | Modulo: signals | Aviso: Usuario - "externo", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-23 21:37:24,190 | Modulo: signals | Aviso: Usuario - "externo", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-23 21:37:28,374 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 09:36:55,890 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 10:16:54,756 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 10:17:00,275 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 15:24:05,281 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 15:24:10,745 | Modulo: signals | Aviso: Usuario - "externo", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 15:30:25,819 | Modulo: signals | Aviso: Usuario - "externo", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 15:30:31,106 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 15:37:26,900 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 15:37:38,285 | Modulo: signals | Aviso: Usuario - "externo", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-24 18:43:31,073 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-25 18:08:12,156 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-25 18:08:15,587 | Modulo: signals | Aviso: Usuario - "willian", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-25 21:48:23,730 | Modulo: signals | Aviso: Usuario - "willian", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-25 21:48:27,028 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-27 11:28:46,711 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-27 11:28:53,230 | Modulo: signals | Aviso: Usuario - "willian", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-27 15:43:20,509 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-27 15:45:49,985 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-27 16:07:30,725 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-27 22:05:30,653 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-27 22:05:33,766 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-28 13:28:47,239 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-28 13:28:56,898 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-28 13:40:11,869 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-28 13:40:15,294 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-28 19:34:43,237 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2023-12-28 19:34:50,302 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-03 15:37:31,400 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-03 15:39:51,283 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-03 15:43:21,486 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-03 15:44:16,473 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-03 15:49:16,089 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-03 16:12:19,083 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-04 10:46:22,202 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-04 11:23:35,419 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 21:04:14,771 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:05:18,105 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:05:22,955 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:15:48,199 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:15:51,459 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:34:00,249 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:34:03,790 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:37:37,592 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:37:44,974 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:39:29,110 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:39:32,516 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:54:15,640 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:54:21,080 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:57:56,175 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:58:01,299 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:59:36,098 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-16 23:59:41,023 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:03:11,866 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:03:15,114 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:03:24,187 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:03:28,386 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:18:06,664 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:18:09,924 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:18:21,085 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:18:24,219 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:23:48,393 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-17 00:23:52,729 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-18 02:26:15,693 | Modulo: signals | Aviso: Usuario - "filipe", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-18 02:26:18,561 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-18 15:49:08,839 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-18 15:49:13,083 | Modulo: signals | Aviso: Usuario - "henrique", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-26 15:00:52,072 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-26 15:05:25,316 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-29 10:08:35,147 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-29 10:16:28,482 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-29 10:17:33,121 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-29 10:17:39,545 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-30 07:57:58,367 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-01-30 17:31:09,128 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-01 17:02:42,783 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 15:28:12,510 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 15:28:16,729 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2024-02-02 16:14:28,014 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: 'ProcessoAdm' object has no attribute 'uf'
+Level: ERROR | Data: 2024-02-02 16:14:58,286 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: 'ProcessoAdm' object has no attribute 'uf'
+Level: ERROR | Data: 2024-02-02 16:15:16,663 | Modulo: views | Aviso: Erro ao editar objeto - View: ProcessoAdmUpdate - Erro: 'ProcessoAdm' object has no attribute 'uf'
+Level: INFO | Data: 2024-02-02 16:23:12,656 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:32:18,451 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:47:14,130 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:47:56,544 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:48:47,347 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:50:30,977 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:50:37,544 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:51:11,916 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:51:52,887 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-02 16:52:02,985 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 06:33:41,262 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:28:35,311 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:28:39,026 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:29:21,427 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:36:22,143 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:36:28,770 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:37:18,028 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:41:26,917 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 08:42:01,091 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:14:50,434 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:22:11,430 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:22:17,646 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:26:05,478 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:26:08,967 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:29:22,170 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:29:24,618 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:29:26,376 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:29:32,303 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:30:08,616 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:30:19,292 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:32:08,970 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:32:10,731 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:34:48,431 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:34:52,511 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:35:09,407 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:38:43,567 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:39:05,489 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:39:11,007 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:39:26,714 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-05 14:49:45,736 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-06 11:18:43,079 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-06 11:18:47,340 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-07 16:03:55,882 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-08 15:09:26,437 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-08 15:09:31,685 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-08 15:35:03,101 | Modulo: signals | Aviso: Usuario - "Mari", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-08 15:35:12,947 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 12:16:38,557 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 12:16:51,048 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 12:17:00,515 | Modulo: signals | Aviso: Usuario - "thiago", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 12:17:06,546 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 14:27:13,420 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2024-02-09 15:06:58,367 | Modulo: views | Aviso: Erro ao deletar objeto - View: ProcessoAdmDelete - Erro: No URL to redirect to. Provide a success_url.
+Level: ERROR | Data: 2024-02-09 15:08:46,537 | Modulo: views | Aviso: Erro ao deletar objeto - View: ProcessoAdmDelete - Erro: No URL to redirect to. Provide a success_url.
+Level: ERROR | Data: 2024-02-09 15:09:21,458 | Modulo: views | Aviso: Erro ao deletar objeto - View: ProcessoAdmDelete - Erro: No URL to redirect to. Provide a success_url.
+Level: ERROR | Data: 2024-02-09 15:10:17,321 | Modulo: views | Aviso: Erro ao deletar objeto - View: ProcessoAdmDelete - Erro: No URL to redirect to. Provide a success_url.
+Level: ERROR | Data: 2024-02-09 15:12:02,091 | Modulo: views | Aviso: Erro ao deletar objeto - View: ProcessoAdmDelete - Erro: ProcessoAdmDelete.get_success_url() missing 1 required positional argument: 'request'
+Level: INFO | Data: 2024-02-09 15:28:00,942 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:23:45,015 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:28:01,103 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:29:01,777 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:29:09,504 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:45:31,736 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:45:41,402 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:45:47,507 | Modulo: signals | Aviso: Usuario - "admin", realizou "Logout" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:45:52,865 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:49:57,381 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-09 16:50:40,436 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-12 10:02:50,497 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-12 12:54:46,385 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-12 15:19:45,239 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-12 16:24:38,262 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2024-02-14 00:20:58,332 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: 'AndamentoAdm' object has no attribute 'complemento'
+Level: ERROR | Data: 2024-02-14 00:21:47,611 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: 'AndamentoAdm' object has no attribute 'complemento'
+Level: INFO | Data: 2024-02-14 12:25:48,000 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-14 12:34:47,206 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: INFO | Data: 2024-02-14 12:38:14,885 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2024-02-14 15:37:01,353 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:37:26,802 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:39:07,018 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:41:13,495 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:43:57,750 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:47:57,958 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:49:45,091 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:53:21,467 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 15:59:31,483 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:00:32,070 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:01:54,245 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:01:55,956 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:01:59,184 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:02:02,529 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:02:05,075 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:02:11,833 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:02:12,986 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:02:13,402 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:02:13,819 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'NoneType' object has no attribute 'id'
+Level: ERROR | Data: 2024-02-14 16:05:28,414 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:05:43,829 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:05:49,583 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:05:54,226 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:06:04,037 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:06:15,732 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:06:30,198 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: ERROR | Data: 2024-02-14 16:06:35,038 | Modulo: views | Aviso: Erro ao criar objeto - View: ProcessoAdmCreate - Erro: 'dict' object is not callable
+Level: INFO | Data: 2024-02-15 13:58:43,636 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
+Level: ERROR | Data: 2024-02-15 16:39:45,423 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2024-02-15 16:40:08,511 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2024-02-15 16:40:52,014 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2024-02-15 16:46:14,027 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\Oficio Energisa.docx'
+Level: ERROR | Data: 2024-02-15 16:48:16,330 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\Oficio Energisa.docx'
+Level: ERROR | Data: 2024-02-15 16:48:21,719 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [Errno 2] No such file or directory: 'media/Arquivo\\Oficio Energisa.docx'
+Level: ERROR | Data: 2024-02-15 16:48:48,543 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2024-02-15 16:48:53,534 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: (-2147221008, 'CoInitialize não foi chamado.', None, None)
+Level: ERROR | Data: 2024-02-15 16:50:15,816 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: Open.SaveAs
+Level: ERROR | Data: 2024-02-15 16:50:27,261 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [Errno 13] Permission denied: 'media/Arquivo\\Oficio Energisa.docx'
+Level: ERROR | Data: 2024-02-15 16:50:55,323 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 13] Permission denied: 'media/arquivo/Oficio Energisa.docx'
+Level: ERROR | Data: 2024-02-15 16:54:47,505 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [Errno 13] Permission denied: 'media/Arquivo\\Oficio Energisa.docx'
