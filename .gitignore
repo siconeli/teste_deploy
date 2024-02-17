@@ -1,0 +1,4 @@
+venv
+*.pyc
+webger23/__pycache__/
+logs/processo.log

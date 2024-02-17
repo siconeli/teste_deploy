@@ -1,0 +1,70 @@
+/* CSS PARA O INDEX.HTML */
+
+/* Corpo do Menu */
+.container-fluid {
+    background-color:  #0098DB;
+    height: 70px; /* Altura da barra de menu */
+}
+
+#text-menu {
+    color: white;
+}
+
+/* Navbar lateral do menu */
+#offcanvasNavbar {
+    background-color: white;
+    /* background-color: black; */
+    
+}
+
+/* Texto do navbar lateral do menu */
+#texto-navbar-menu {
+    color: rgb(0, 0, 0);
+}
+
+/* Texto superior do navbar lateral do menu */
+#texto-inicio-navbar-menu {
+    color: white;
+}
+
+/* Imagem tela cheia da página principal */
+/* #pagina-principal {
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/fundo.png');
+    background-size: cover;
+} */
+
+/* Para configurar o fosco que aparece na tela ao abrir o menu */
+.offcanvas-backdrop {
+    /* display: none !important; */
+    width: 100%; /* Defina a largura desejada */
+    height: 100%; /* Defina a altura desejada */
+    opacity: 0.9; /* Define a opacidade desejada (50%) */
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*Garante que o corpo ocupa a altura mínima da viewport */
+    position: relative; /*Define uma posição relativa para que o rodapé fique posicionado corretamente*/
+}
+
+.rodape {
+    background-color: rgb(228, 225, 225); /* Cor de fundo da barra */
+    color: black; /* Cor do texto na barra */
+    padding: 3px; /* Espaçamento interno para o conteúdo da barra */
+    text-align: left; /* Alinhamento do texto ao centro */
+    font-size: 12px; /* Tamanho da letra do texto */
+
+    /* Estilo de posição fixa */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* FIM CSS PARA INDEX.HTML */
+

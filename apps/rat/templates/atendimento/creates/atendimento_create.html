@@ -1,0 +1,130 @@
+<!--Lista de Processos Administrativos-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% load widget_tweaks %}
+
+{% block titulo %}
+    <title>Registrar Atendimento</title>
+{% endblock %}
+
+{% block conteudo %} 
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #5c5c5c;">
+                <h5 style="text-align: center;">Registro de Atendimentos</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        {% if user.is_staff %} <!--Membro da equipe = is_staff-->
+                            <h6>Listar</h6>
+                            <!-- Icone de cadastrar processo -->
+                            <a href="{% url 'atendimento-list' %}"><img src="{% static 'img/listar_atendimento2.png' %}" width="40" ></a>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                         <!-- Usado para ocupar espaço -->
+                    </div>
+                    <div class="col">
+                         <!-- Usado para ocupar espaço -->
+                    </div>
+                    <div class="col">
+                         <!-- Usado para ocupar espaço -->
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header text-white" style="background-color: #5c5c5c;; text-align: center;">
+                    <h6>Novo Atendimento</h6>
+                    </div>
+                    <div class="card-body">                 
+                        <form action="" method="post" enctype="" id="meuFormulario">
+                            {% csrf_token %}
+                            <div class="row"> <!--Linha-->
+                                <div class="col"> <!--Coluna-->
+                                    <label for="municipio">Município <b>*</b></label>
+                                    {% render_field form.municipio class="form-control" id="municipio" %}
+                                </div>
+                                <div class="col">
+                                    <label for="data">Data<b>*</b></label>
+                                    {% render_field form.data class="form-control" type="date" id="data" %}
+                                </div>
+                                <div class="col">
+                                    <label for="cliente">Cliente<b>*</b></label>
+                                    {% render_field form.cliente class="form-control" id="cliente" %}
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="descricao">Descrição <b>*</b></label>
+                                    {% render_field form.descricao class="form-control" id="descricao" %}
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="submit" class="btn btn-success btn-sm" id="submit-button">Salvar</button>
+                                <a href="{% url 'atendimento-create' %}" class="btn btn-danger btn-sm" id="cancel-href">Limpar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <br>
+    {% endblock %}
+
+    {% block scripts %}
+    <!-- Importação JS da minha 'datatable' -->
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.6/datatables.min.js"></script>
+
+    <script>
+        // Para transformar minha lista em um datatable
+        $(document).ready(function(){
+            $('#tabela-listar').DataTable({
+                responsive: true,
+                "ordering": false, // Remove as opções das colunas de ordenar a tabela.
+                // "bSort": false,
+                "aaSorting": [],
+                "pageLength": 5,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "Nenhum processo registrado",
+                    "info": "Ativos: _TOTAL_ ",
+                    "infoEmpty": "Ativos: 0",
+                    "infoFiltered": "",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ processos",
+                    "loadingRecords": "A carregar dados...",
+                    "processing": "A processar...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Nenhum processo encontrado",
+                    "paginate": {
+                        "first": "Primeiro",
+                        "last": "Último",
+                        "next": "Próximo",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": ordem crescente",
+                        "sortDescending": ": ordem decrescente"
+                    }
+                }
+            });
+
+        });
+
+    </script>
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+
+
+{% endblock %} 
+

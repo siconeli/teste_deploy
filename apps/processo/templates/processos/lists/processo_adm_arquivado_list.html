@@ -1,0 +1,122 @@
+<!--Lista de Processos Administrativos-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %}
+    <title>Processo Administrativo</title>
+{% endblock %}
+
+{% block conteudo %} 
+    <div class="container p-4">
+        <div class="card-body">
+            <div class="card">
+                <div class="card-header text-white" style="background-color: #5c5c5c;; text-align: center;">
+                <h5>Processo Arquivado</h5>
+                </div>
+                <div class="card-body">                 
+                    <!--Tabela(lista) de Processos-->
+                    <div class="table-responsive">
+                        <!-- <br> -->
+                        <table class="table table-striped" id="tabela-listar">
+                            <thead>
+                                <tr class="table-secondary">
+                                    <th>Processo</th>
+                                    <th>Município</th>
+                                    <th>Contribuinte</th>
+                                    <th>CPF/CNPJ</th>
+                                    {% if user.is_staff %} <!--Membro da equipe = is_staff-->
+                                        <th>Criado por</th>
+                                        <th>Criado em</th>
+                                    {% endif %}        
+                                    <th>Ver/Editar/Deletar</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for processo in object_list %}
+                                <tr>
+                                    <td><b>{{ processo.numero }}</b></td>
+                                    <td>{{ processo.municipio }}</td>
+                                    <td>{{ processo.nome_contribuinte }}</td>
+                                    <td>{{ processo.documento }}</td>
+
+                                    {% if user.is_staff %} <!--Membro da equipe = is_staff-->
+                                        <td>{{ processo.usuario_criador.get_full_name }}</td>
+                                        <td>{{ processo.data_criacao|date:"d/m/Y" }}</td> <!--Formatei a data para aparecer neste formato na minha Data-table -->
+                                    {% endif %}
+                                    
+                                        <td>
+                                            <a href="{% url 'proc-adm-arquivado-view' processo.pk %}"><img src="{% static 'img/olho3.png' %}" width="30"></i></a>
+                                            
+                                            {% if user.is_superuser %} <!--Membro da equipe = is_staff-->
+                                                <a href="{% url 'proc-adm-arquivado-update' processo.pk %}"><img src="{% static 'img/botao-editar.png' %}" width="20"></i></a>
+                                            {% endif %}
+
+                                            {% if user.is_superuser %} <!-- Super Usuário -->
+                                                <a href="{% url 'proc-adm-arquivado-delete' processo.pk %}"><img src="{% static 'img/excluir.png' %}" width="20"></a>
+                                            {% endif %}
+                                        </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        <br>
+                        <a href="{% url 'proc-adm-list' %}" class="btn btn-secondary btn-sm">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+    <br>
+    {% endblock %}
+
+    {% block scripts %}
+    <!-- Importação JS da minha 'datatable' -->
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.6/datatables.min.js"></script>
+
+    <script>
+        // Para transformar minha lista em um datatable
+        $(document).ready(function(){
+            $('#tabela-listar').DataTable({
+                responsive: true,
+                // "bSort": false,
+                "aaSorting": [],
+                "pageLength": 5,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "Nenhum processo arquivado",
+                    "info": "Arquivados: _TOTAL_ ",
+                    "infoEmpty": "Arquivados: 0",
+                    "infoFiltered": "",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ processos",
+                    "loadingRecords": "A carregar dados...",
+                    "processing": "A processar...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Nenhum processo encontrado",
+                    "paginate": {
+                        "first": "Primeiro",
+                        "last": "Último",
+                        "next": "Próximo",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": ordem crescente",
+                        "sortDescending": ": ordem decrescente"
+                    }
+                }
+            });
+
+        });
+
+    </script>
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+
+{% endblock %} 
+

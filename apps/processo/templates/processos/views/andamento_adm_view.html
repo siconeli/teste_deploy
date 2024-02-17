@@ -1,0 +1,99 @@
+<!-- Formulário de View de Andamento-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% load widget_tweaks %}  <!--# Biblioteca Widget - Muito importante - Torna possível eu criar um formulário HTML próprio sincronizado com as Class Based Views.-->
+
+{% block titulo %}
+    <title>Visualizar Andamento</title>
+{% endblock %}
+
+{% block conteudo %}
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #5c5c5c;">
+                <h5 style="text-align: center;">Visualizar Andamento</h5>
+            </div>
+            <div class="card-body">
+                {% for atributo in dados_andamento %}
+                    <h5>Andamento: {{ atributo.tipo_andamento }}</h5>
+                    <hr>
+                    <div class="row">
+                            {% if atributo.data_andamento %}
+                                <div class="col">
+                                    <label for="data_andamento">Data do Andamento <b>*</b></label>
+                                    <input type="text" class="form-control" value="{{ atributo.data_andamento|date:"d/m/Y" }}" readonly>
+                                </div>
+                            {% endif %}                
+                            {% if atributo.tipo_andamento %}
+                                <div class="col">
+                                    <label for="tipo_andamento">Tipo de Andamento <b>*</b></label>
+                                    <input type="text" class="form-control" value="{{ atributo.tipo_andamento }}" readonly>
+                                </div>
+                            {% endif %}
+                            {% if atributo.situacao_pagamento %}
+                                <div class="col">
+                                    <label for="situacao_pagamento">Situação do Pagamento <b>*</b></label>
+                                    <input type="text" class="form-control" value="{{ atributo.situacao_pagamento }}" readonly>
+                                </div>
+                            {% endif %}
+                            {% if atributo.valor_pago %}
+                                <div class="col">
+                                    <label for="valor_pago">Total do Valor Pago <b>*</b></label>
+                                    <input type="text" class="form-control" value="{{ atributo.valor_pago }}" readonly>
+                                </div>
+                            {% endif %}
+                            {% if atributo.funcionario %}
+                                <div class="col">
+                                    <label for="funcionario">Funcionário</label>
+                                    <input type="text" class="form-control" value="{{ atributo.funcionario }}" readonly>
+                                </div>
+                            {% endif %}
+                            {% if atributo.localizacao_processo %}
+                            <div class="col">
+                                <label for="localizacao_processo">Localização do Processo</label>
+                                <input type="text" class="form-control" value="{{ atributo.localizacao_processo }}" readonly>
+                            </div>
+                        {% endif %}
+                        </div>
+                        <br>
+                        <div class="row">
+                            {% if atributo.data_prazo %}
+                                <div class="col">
+                                    <label for="data_prazo">Prazo</label>
+                                    <input type="text" class="form-control" value="{{ atributo.data_prazo|date:"d/m/Y" }}" readonly>
+                                </div>
+                            {% endif %}
+                            {% if atributo.data_recebimento %}
+                                <div class="col">
+                                    <label for="data_recebimento">Confirmado o Recebimento em</label>
+                                    <input type="text" class="form-control" value="{{ atributo.data_recebimento|date:"d/m/Y" }}" readonly>
+                                </div>
+                            {% endif %}
+                            {% if atributo.assunto %}
+                                <div class="col">
+                                    <label for="assunto">Assunto</label>
+                                    <input type="text" class="form-control" value="{{ atributo.assunto }}" readonly>
+                                </div>
+                            {% endif %}
+                        </div>  
+                        <br>
+                        <div>
+                        <a href="{{ voltar }}" class="btn btn-secondary btn-sm">Voltar</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+
+{% endblock %}

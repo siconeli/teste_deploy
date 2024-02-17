@@ -1,0 +1,233 @@
+<!-- Formulário de create de Andamento-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% load widget_tweaks %}  <!--# Biblioteca Widget - Muito importante - Torna possível eu criar um formulário HTML próprio sincronizado com as Class Based Views.-->
+
+{% block titulo %}
+<title>Cadastrar Andamento</title>
+{% endblock %}
+
+{% block conteudo %}
+<div class="container p-4">
+    <div class="card">
+        <div class="card-header text-white" style="background-color: #5c5c5c;">
+                <h5 style="text-align: center;">Cadastrar Andamento</h5>
+         </div>
+        <div class="card-body">
+            {% for atributo in dados_processo %}
+                <h5>Processo: {{ atributo.numero }}</h5>
+            {% endfor %}
+            <hr>
+            <form action="" method="post" enctype="multipart/form-data" id="meuFormulario">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                        <label for="data_andamento">Data do Andamento <b>*</b></label>
+                        {% render_field form.data_andamento class="form-control" type="date" id="data_andamento"%}
+                    </div>
+                    <div class="col" >
+                        <label for="tipo_andamento">Tipo de Andamento <b>*</b></label>
+                        {% render_field form.tipo_andamento class="andamento form-control" id="tipo_andamento"%}
+                    </div>
+                    <!-- O campo a baixo só ira aparecer para o usuário se no campo anterior, o valor 'Encerrado' for selecionado -->
+                    <div class="col" style="display: none;" id="situacao_pagamento"> <!--style="display: none;" Deixa o campo invizível-->
+                        <label for="situacao_pagamento">Situação do Pagamento <b>*</b></label>
+                        {% render_field form.situacao_pagamento class="form-control" id="sit"%}
+                    </div>
+                    <!-- O campo a baixo só ira aparecer para o usuário se no campo anterior, o valor 'Com Pagamento' for selecionado -->
+                    <div class="col" style="display: none;" id="valor_pago">
+                        <label for="valor_pago">Total do Valor Pago <b>*</b></label>
+                        {% render_field form.valor_pago class="mask-money form-control" type="text" maxlength="14" id="pag" placeholder="R$"%}
+                    </div>
+                    <!-- O campo a baixo só ira aparecer para o usuário se no campo anterior, o valor 'Encaminhamento' for selecionado -->
+                    <div class="col" style="display: none;" id="funcionario">
+                        <label for="funcionario">Funcionario</label>
+                        <select name="funcionario" id="func" class="form-control">
+                            <option value="">---------</option>
+                            {% for funcionario in funcionarios %}
+                                <option value="{{ funcionario.get_full_name }}">{{ funcionario.get_full_name }}</option>
+                            {% endfor%}
+                        </select>
+                    </div>
+                    <!-- O campo a baixo só ira aparecer para o usuário se no campo anterior, o valor 'Encaminhamento' for selecionado -->
+                    <div class="col" style="display: none;" id="localizacao_processo">
+                        <label for="localizacao_processo">Localização Processo</label>
+                        {% render_field form.localizacao_processo class="form-control" id="loc" %}
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="data_prazo">Prazo</label>
+                        {% render_field form.data_prazo class="form-control" type="date" id="data_prazo"%}
+                    </div>
+                    <div class="col">
+                        <label for="data_recebimento">Confirmado o Recebimento em</label>
+                        {% render_field form.data_recebimento class="form-control" type="date" id="data_recebimento"%}
+                    </div>
+                    <div class="col">
+                        <label for="assunto">Assunto</label>
+                        {% render_field form.assunto class="form-control" id="assunto"%}
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        {% render_field form.arquivo id="arquivo" name="arquivo" class="form-control" accept=".docx,.pdf"%} 
+                        <label for="arquivo">Formato: <b>.docx</b> ou <b>.pdf</b></label>
+                        <!-- accept=".docx,.pdf" impede o usuário de selecionar qualquer outro tipo de extensão no campo do arquivo -->
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="btn btn-success btn-sm" id="salvar">Salvar</button> 
+                    <a href="{{ cancelar }}" class="btn btn-danger btn-sm" id="cancelar">Cancelar</a>
+                </div>
+                <br>
+                <div id="loading" style="display: none;"><img src="{% static 'img/loading2.png'%}" width="20"> Salvando</div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+<!-- Importação do Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Importações para utilizar maskMoney -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+
+<!-- Função em Java Script para mostrar/ocultar campos com base nas seleções -->
+<script>
+    $(document).ready(function() {
+
+    // Função para mostrar/ocultar campos com base nas seleções
+    function toggleFields() {
+        var andamento = $("#tipo_andamento");
+        var situacao = $("#sit");
+        var pago = $("#pag");
+        var fun = $("#func");
+        var loc = $("#loc");
+        
+        // PARA ABRIR OS CAMPOS PARA O ANDAMENTO  
+        if (andamento.val() === '26' || andamento.val() === '58' || andamento.val() === '64' || andamento.val() === '66' || andamento.val() === '28' || andamento.val() === '15') { // ID DOS ANDAMENTOS 
+            $("#situacao_pagamento").show();
+            if (situacao.val() === 'Com Pagamento') {
+                $("#valor_pago").show();
+                
+                // Para tornar o campo 'valor_pago' obrigatório se o select 'situacao_pagamento' for igual a 'Com Pagamento'
+                pago.prop('required', true);
+
+            }else if(situacao.val() === 'Sem Pagamento'){ 
+                $("#valor_pago").hide();
+                pago.val("");
+                
+                // Para tornar o campo 'valor_pago' não obrigatório se o select 'situacao_pagamento' for igual a 'Sem Pagamento'
+                pago.prop('required', false);
+
+            }else if(situacao.val() === ""){
+                situacao.val("Sem Pagamento"); 
+                $("#valor_pago").hide();
+                pago.val("");
+                pago.prop('required', false);
+            }
+        }else {
+            $("#situacao_pagamento").hide();
+            $("#valor_pago").hide();
+
+            // Limpa o valor inserido no campo "valor_pago" quando ele deixa de ser mostrado
+            pago.val("");
+        }
+
+        // PARA ABRIR OS CAMPOS PARA O ANDAMENTO 
+        if(andamento.val() === '41'){ // ID = 41 - ENCAMINHAMENTO
+            $("#funcionario").show();
+            fun.prop('required', true);
+
+        }else {
+            $("#funcionario").hide();
+            fun.val("");
+            fun.prop('required', false);
+        }
+        
+        if(andamento.val() === '41'){ // ID = 41 - ENCAMINHAMENTO
+            $("#localizacao_processo").show();
+            loc.prop('required', true);
+
+        }else {
+            $("#localizacao_processo").hide();
+            loc.val("");
+            loc.prop('required', false);
+        }
+        // -----------------------------------------------------
+    }
+        
+        // Chame a função ao carregar a página
+        toggleFields();
+        
+        // Adicione ouvintes de eventos para atualizar os campos quando as seleções mudarem
+        $("#tipo_andamento, #situacao_pagamento, #funcionario, #localizacao_processo").on("change", toggleFields);
+
+    // Para utilizar mácara de real maskMoney no campo total_pago
+    $('#pag').maskMoney({
+        thousands: '.',
+        decimal: ',',
+    });
+        
+    $('form').on('submit', function() {
+        // Remove a máscara monetária antes de enviar o formulário
+        var valor = $('#pag').maskMoney('unmasked')[0];
+        $('#pag').val(valor);
+    });
+    
+});
+</script>
+
+<!-- Importação do arquivo dentro da pasta static/js para usar máscaras nos campos input -->
+<script src="{% static 'js/jquery.mask.min.js' %}"></script>
+
+<!-- Aplicação de máscara de valor no campo input do atributo 'valor_pago' que possui o id = 'pag' -->
+<script>
+    $(document).ready(function(){
+        $('#pag').mask("000,000,000.00", {reverse: true});
+        
+    })
+</script>
+
+<!-- Código Js para bloquear os botões de salvar e cancelar e inserir mensagem de 'carregando...', após clicar no botão enviar para fazer o submit do formulário, para que o usuário não tente fazer o envio mais de uma vez enquanto acontece o envio ou a conversão de arquivo word para pdf -->
+<script>
+    document.querySelector('form').addEventListener('submit', function() {
+        var submitButton = document.querySelector('#salvar');
+        var loadingMessage = document.querySelector('#loading');
+
+        // Desativa o botão de envio
+        submitButton.disabled = true;
+
+        document.getElementById("cancelar").removeAttribute("href");
+
+        // Exibe a mensagem de carregamento
+        loadingMessage.style.display = 'block';
+
+        // Você também pode adicionar um atraso simulado aqui para mostrar a mensagem
+        // de carregamento por alguns segundos antes de continuar com o envio real.
+        // setTimeout(function() {
+        //     this.submit();
+        // }, 2000); // Simula um atraso de 2 segundos
+        return true;
+    });
+</script>
+
+<script>
+    document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+</script>
+
+{% endblock %}
+
+

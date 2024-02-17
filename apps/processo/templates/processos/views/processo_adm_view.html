@@ -1,0 +1,194 @@
+<!-- Formulário de view de Processo Administrativo-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% load widget_tweaks %} 
+
+{% block titulo %}
+    <title>Visualizar Processo</title>
+{% endblock %}
+
+{% block conteudo %} 
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #5c5c5c;">
+                <h5 style="text-align: center;">Visualizar Processo</h5>
+            </div>
+            <div class="card-body">
+                {% for atributo in dados_processo %}
+                    <h5>Processo: {{ atributo.numero }}</h5>
+                    <hr>
+                    <div class="row"> 
+                        {% if atributo.numero %}
+                            <div class="col">
+                                <label for="numero">Processo N° <b>*</b></label>
+                                <input type="text" class="form-control" value="{{ atributo.numero}}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.uf %}
+                            <div class="col">
+                                <label for="uf">UF <b>*</b></label>
+                                <input type="text" class="form-control" value="{{ atributo.uf }}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.municipio %}
+                            <div class="col">
+                                <label for="municipio">Município <b>*</b></label>
+                                <input type="text" class="form-control" value="{{ atributo.municipio }}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.data_inicial %}
+                            <div class="col">
+                                <label for="data_inicial">Período</label>
+                                <input type="text" class="form-control" value="{{ atributo.data_inicial|date:"d/m/Y" }}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.data_final %}
+                            <div class="col">
+                                <label for="data_final"><!--Período Final--></label>
+                                <input type="text" class="form-control" value="{{ atributo.data_final|date:"d/m/Y" }}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.data_div_ativa %}
+                            <div class="col">
+                                <label for="data_div_ativa">D.A</label>
+                                <input type="text" class="form-control" value="{{ atributo.data_div_ativa|date:"d/m/Y" }}" readonly>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <br>
+                    <div class="row">
+                        {% if atributo.valor_atributo %}
+                            <div class="col">
+                                <label for="valor_atributo">Valor do Tributo</label>
+                                <input type="text" class="form-control" value="{{ atributo.valor_atributo }}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.valor_multa %}
+                            <div class="col">
+                                <label for="valor_multa">Valor da Multa</label>
+                                <input type="text" class="form-control" value="{{ atributo.valor_multa }}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.valor_credito %}
+                            <div class="col">
+                                <label for="valor_credito">Valor do Crédito</label>
+                                <input type="text" class="form-control" value="{{ atributo.valor_credito }}" readonly>
+                            </div>
+                        {% endif %}
+                        {% if atributo.valor_atualizado %}
+                            <div class="col">
+                                <label for="valor_atualizado">Valor do Atualizado</label>
+                                <input type="text" class="form-control" value="{{ atributo.valor_atualizado }}" readonly>
+                            </div>  
+                        {% endif %}
+                        {% if atributo.data_valor_atualizado %}
+                            <div class="col">
+                                <label for="data_valor_atualizado">Data Valor Atualizado</label>
+                                <input type="text" class="form-control" value="{{ atributo.data_valor_atualizado|date:"d/m/Y" }}" readonly>
+                            </div> 
+                        {% endif %}
+                    </div>    
+                    <br><br>
+                    <h5>Contribuinte</h5>
+                    <hr>
+                    <div class="row">
+                        {% if atributo.nome_contribuinte %}
+                            <div class="col">
+                                <label for="nome_contribuinte">Nome / Razão Social <b>*</b></label>
+                                <input type="text" class="form-control" value="{{ atributo.nome_contribuinte }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.tipo_pessoa %}
+                            <div class="col">
+                                <label for="tipo_pessoa">Tipo de Pessoa <b>*</b></label>
+                                <input type="text" class="form-control" value="{{ atributo.tipo_pessoa }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.documento %}
+                            <div class="col">
+                                <label for="documento">CPF / CNPJ <b>*</b></label>
+                                <input type="text" class="form-control" value="{{ atributo.documento }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.nome_fantasia %}
+                            <div class="col">
+                                <label for="nome_fantasia">Nome Fantasia</label>
+                                <input type="text" class="form-control" value="{{ atributo.nome_fantasia }}" readonly>
+                            </div> 
+                        {% endif %}
+                    </div>
+                    <br>
+                    <div class="row">
+                        {% if atributo.endereco %}
+                            <div class="col">
+                                <label for="endereco">Logradouro / N° / Bairro <b>*</b></label>
+                                <input type="text" class="form-control" value="{{ atributo.endereco }}" id="endereco" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.complemento %}
+                            <div class="col">
+                                <label for="complemento">Complemento</label>
+                                <input type="text" class="form-control" value="{{ atributo.complemento }}" readonly>
+                            </div> 
+                        {% endif %}
+                    </div>
+                    <br>
+                    <div class="row">
+                        {% if atributo.uf_contribuinte %}
+                            <div class="col">
+                                <label for="uf_contribuinte">UF</label>
+                                <input type="text" class="form-control" value="{{ atributo.uf_contribuinte }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.municipio_contribuinte %}
+                            <div class="col">
+                                <label for="municipio_contribuinte">Município</label>
+                                <input type="text" class="form-control" value="{{ atributo.municipio_contribuinte }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.cep %}
+                            <div class="col">
+                                <label for="cep">CEP</label>
+                                <input type="text" class="form-control" value="{{ atributo.cep }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.email %}
+                            <div class="col">
+                                <label for="email">E-mail</label>
+                                <input type="text" class="form-control" value="{{ atributo.email }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.celular %}
+                            <div class="col">
+                                <label for="celular">Celular</label>
+                                <input type="text" class="form-control" value="{{ atributo.celular }}" readonly>
+                            </div> 
+                        {% endif %}
+                        {% if atributo.telefone %}
+                            <div class="col">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" class="form-control" value="{{ atributo.telefone }}" readonly>
+                            </div> 
+                        {% endif %}
+                    </div>
+                    <br>         
+                    <a href="{{ url_retorno }}" class="btn btn-secondary btn-sm">Voltar</a>           
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+{% endblock %}
+
+{% block scripts %}
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+
+{% endblock %}
+
+

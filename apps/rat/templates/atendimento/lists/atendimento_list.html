@@ -1,0 +1,127 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %}
+    <title>Listar Atendimentos</title>
+{% endblock %}
+
+{% block conteudo %}
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #5c5c5c;">
+                <h5 style="text-align: center;">Filtros</h5>
+            </div>
+            <div class="card-body">
+                <form method="get" action="{% url 'atendimento-list' %}">
+                    <div class="row">
+                        <div class="col">
+                            <label for="data_inicial">Período</label>
+                            <input type="date" class="form-control" name="data_inicial" id="" value="{{ request.GET.data_inicial }}" autocomplete="off">
+                        </div>
+                        <div class="col">
+                            <label for="data_inicial"></label>
+                            <input type="date" class="form-control" name="data_final" id="" value="{{ request.GET.data_final }}" autocomplete="off">
+                        </div>
+                        <div class="col">
+                            <label for="municipio">Município</label>
+                            <select name="municipio" id="municipio" class="form-control">
+                                <option value="">Todos</option>
+                                {% for municipio in municipios %}
+                                    {% with municipio_selecionado=request.GET.municipio|stringformat:"s" %} <!--stringformat:"s" Converte o valor para String | With serve para manter o valor selecionado no select, após clicar em Buscar-->
+                                        <option value="{{ municipio.id }}" {% if municipio.id|stringformat:"s" == municipio_selecionado %}selected{% endif %}>{{ municipio.nome }}</option>
+                                    {% endwith %}
+                                {% endfor %}
+                            </select> 
+                        </div>
+                        <div class="col">
+                            <label for="funcionario">Atendente</label>
+                            <select name="funcionario" id="funcionario" class="form-control">
+                                <option value="">Todos</option>
+                                {% for funcionario in funcionarios %}
+                                    {% with funcionario_selecionado=request.GET.funcionario|stringformat:"s" %}
+                                        <option value="{{ funcionario.id }}" {% if funcionario.id|stringformat:"s" == funcionario_selecionado %}selected{% endif %}>{{ funcionario.nome }}</option>
+                                    {% endwith %}
+                                    <!-- <option value="">{{ funcionario.nome }}</option> -->
+                                {% endfor %}
+                            </select> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'atendimento-list' %}" class="btn btn-danger btn-sm">Limpar</a>
+                            <a href="{% url 'atendimento-create' %}" class="btn btn-success btn-sm">Novo</a>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+                            <!-- Usado para ocupar espaço -->
+                        </div>
+                        <div class="col">
+                            <!-- Usado para ocupar espaço -->
+                        </div>
+                        <div class="col">
+                            <!-- Usado para ocupar espaço -->
+                        </div>
+                        <div class="col">
+                            <!-- Usado para ocupar espaço -->
+                        </div>
+                        <div class="col">
+                            <!-- Usado para ocupar espaço -->
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <div class="card">
+                    <div class="card-header text-white" style="background-color: #5c5c5c;; text-align: center;">
+                    <h6>Lista de Atendimentos</h6>
+                    </div>
+                    <div class="card-body">                 
+                        <div class="table-responsive">
+                            <table class="table table-striped" id="tabela-listar">
+                                <thead>
+                                    <tr class="table-secondary">
+                                        <th>Data</th>
+                                        <th>Município</th>
+                                        <th>Cliente</th>
+                                        <th>Atendente</th>
+                                        <th>Ver/Editar/Deletar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for atendimento in object_list %}
+                                    <tr>
+                                        <td><b>{{ atendimento.data|date:"d/m/Y" }}</b></td>
+                                        <td>{{ atendimento.municipio }}</td>
+                                        <td>{{ atendimento.cliente }}</td>  
+                                        <td>{{ atendimento.funcionario.nome}}</td>                                      
+                                        <td>
+                                            <a href="{% url 'atendimento-view' atendimento.pk %}"><img src="{% static 'img/olho3.png' %}" width="30"></a>
+                                            <a href="{% url 'atendimento-update' atendimento.pk %}"><img src="{% static 'img/botao-editar.png' %}" width="20"></a>
+                                            <a href="{% url 'atendimento-delete' atendimento.pk %}"><img src="{% static 'img/excluir.png' %}" width="20"></a>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <br>
+{% endblock%}
+
+{% block scritps %}
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+
+{% endblock %}

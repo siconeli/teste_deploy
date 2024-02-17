@@ -1,0 +1,60 @@
+<!--Tela de confirmação de 'delete' do Andamento Administrativo-->
+
+{% extends 'index.html' %}
+{% load static %}
+
+{% block titulo %}
+    <title>Excluir Andamento</title>
+{% endblock %}
+
+{% block conteudo %}  
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: rgba(190, 0, 0, 0.849);">
+                <h5 style="text-align: center;">Excluir Andamento</h5>
+            </div>
+            <div class="card-body">
+                {% for atributo in dados_andamento %}
+                    <h5>Andamento: {{ atributo.tipo_andamento }}</h5>
+                {% endfor %}
+                <hr>
+                <!-- <br> -->
+                <h6>Confirme para excluir o registro definitivamente <img src="{% static 'img/danger.png' %}" width="25"></h6>
+                <br>
+                <form action="" method="post">
+                    {% csrf_token %}
+
+                    <p>Tem certeza que deseja excluir o andamento?</p>
+                    
+                    <div>
+                        <!-- <button type="submit" style="border: none; background-color: white;"><img src="{% static 'img/excluir.png' %}" width="35"></a></button> -->
+                        <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <button class="btn btn-secondary btn-sm" id="btnVoltar">Voltar</button>
+    </div>
+
+    <!--Código CSS + JavaScript para criar botão de voltar para a página anterior-->
+    <script>
+        // Adicione um evento de clique ao botão
+        document.getElementById("btnVoltar").addEventListener("click", function() {
+            // Utilize a função window.history.back() para voltar para a página anterior
+            window.history.back();
+        });
+    </script>
+{% endblock %}
+
+{% block scripts %}
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+
+{% endblock %}
+
+
+
+

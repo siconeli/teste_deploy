@@ -1,0 +1,108 @@
+<!--Lista de Arquivos do andamento-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %}
+<title>Arquivos do Andamento</title>
+{% endblock %}
+
+{% block conteudo %} 
+<div class="container p-4">
+    <div class="card">
+        <div class="card-header text-white" style="background-color: #5c5c5c;">
+            <h5 style="text-align: center;">Arquivo do Andamento</h5>
+         </div>
+        <div class="card-body">
+            {% for atributo in dados_andamento %}
+                <h5>Andamento: {{ atributo.andamento }}</h5>
+            {% endfor %}
+            <hr>
+            <!--Tabela(lista) de Arquivos do andamento-->
+            <div class="table-responsive">
+                <!-- <br> -->
+                <table class="table table-striped" id="tabela-listar-arquivo">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Arquivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for arquivo in object_list %}
+                            {% if arquivo.arquivo %}
+                                <tr>
+                                    <td>
+                                        {{ arquivo.arquivo.name }}
+                                        <a href="{{ arquivo.arquivo.url }}"><img src="{% static 'img/download.png' %}" width="30"></a>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- <br> -->
+            <!--Código CSS + JavaScript para criar botão de voltar para a página anterior -->
+            <button class="btn btn-secondary btn-sm" id="btnVoltar"><i class="bi bi-arrow-left" style="font-size: 15px;"><!--Icone--></i></button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+    // Adicione um evento de clique ao botão
+    document.getElementById("btnVoltar").addEventListener("click", function() {
+        // Utilize a função window.history.back() para voltar para a página anterior
+        window.history.back();
+    });
+</script>
+
+<!-- Importação JS da minha 'datatable' -->
+<!-- <script src="https://cdn.datatables.net/v/bs5/dt-1.13.6/datatables.min.js"></script> -->
+
+<!-- // Para transformar minha lista em um datatable -->
+<!-- <script>
+    $(document).ready(function(){
+        $('#tabela-listar-arquivo').DataTable({
+            responsive: true,
+            // "bSort": false,
+            "aaSorting": [],
+            "pageLength": 5,
+            "language": {
+                "decimal": "",
+                "emptyTable": "Nenhum arquivo anexado",
+                "info": "Arquivos Anexados: _TOTAL_",
+                "infoEmpty": "Arquivos Anexados: 0",
+                "infoFiltered": "(Filtrado de _MAX_ arquivos no total)",
+                "infoPostFix": "",
+                "thousands": ",",
+                "lengthMenu": "Mostrar _MENU_ arquivos",
+                "loadingRecords": "A carregar dados...",
+                "processing": "A processar...",
+                "search": "Buscar:",
+                "zeroRecords": "Nenhum andamento encontrado",
+                "paginate": {
+                    "first": "Primeiro",
+                    "last": "Último",
+                    "next": "Próximo",
+                    "previous": "Anterior"
+                },
+                "aria": {
+                    "sortAscending": ": ordem crescente",
+                    "sortDescending": ": ordem decrescente"
+                }
+            }
+        });
+
+    });
+
+</script> -->
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+    
+{% endblock %}

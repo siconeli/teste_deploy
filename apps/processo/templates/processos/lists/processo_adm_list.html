@@ -1,0 +1,235 @@
+<!--Lista de Processos Administrativos-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %}
+    <title>Processo Administrativo</title>
+{% endblock %}
+
+{% block conteudo %} 
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #5c5c5c;">
+                <h5 style="text-align: center;">Processo Administrativo</h5>
+            </div>
+            <div class="card-body">
+                <h5 style="text-align: center; background-color: #5c5c5c; color: white;">Funções</h5>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        {% if user.is_staff %} <!--Membro da equipe = is_staff-->
+                            <h6>Novo Processo</h6>
+                            <!-- Icone de cadastrar processo -->
+                            <a href="{% url 'proc-adm-create' %}"><img src="{% static 'img/create-processo.png' %}" width="45" ></a>
+                            <br>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        {% if user.is_staff %}
+                            <h6>Relatórios</h6>
+                            <a href="{% url 'proc-adm-report' %}"><img src="{% static 'img/relatorios.png' %}" width="45" ></a>
+                        {% endif %}
+                         </select>
+                    </div>
+                    <div class="col">
+                        <!-- Usado para ocupar espaço -->
+                    </div>
+                    <div class="col">
+                        <!-- Usado para ocupar espaço -->
+                    </div>
+                    <div class="col">
+                        <!-- Usado para ocupar espaço -->
+                    </div>
+                    <div class="col">
+                        <!-- Usado para ocupar espaço -->
+                    </div>
+                    <div class="col">
+                        <!-- Usado para ocupar espaço -->
+                    </div>
+                </div>
+                <hr>
+
+                <h5 style="text-align: center; background-color: #5c5c5c; color: white;">Status geral</h5>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <!-- Usado para ocupar espaço -->
+                   </div>
+                    <div class="col">
+                        {% if user.is_staff %}
+                            <h6>Arquivados</h6>
+                            <a class="nav-link" href="{% url 'proc-adm-arquivado-list' %}"><h4>{{ arquivados }}</h4></a>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        {% if user.is_staff %}
+                            <h6>Executados</h6>
+                            <a class="nav-link" id="texto-navbar-menu" href="{% url 'proc-adm-exec-list' %}" role="button" aria-expanded="false"><h4>{{ executados }}</h4></a>
+                            <h6>R$ {{ total_credito }}</h6>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        {% if user.is_staff %}
+                            <h6>Recebidos</h6>
+                            <a class="nav-link" id="texto-navbar-menu" href="{% url 'proc-adm-recebido-list' %}" role="button" aria-expanded="false"><h4>{{ recebidos }}</h4></a>
+                            <h6>R$ {{ total_pago }}</h6>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        {% if user.is_staff %}
+                        <h6>Encerrados</h6>
+                        <a class="nav-link" id="texto-navbar-menu" href="{% url 'proc-adm-encerrado-list' %}" role="button" aria-expanded="false"><h4>{{ encerrados }}</h4></a>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        {% if user.is_staff %}
+                            <h6>Em Andamento</h6>
+                            <a class="nav-link" id="texto-navbar-menu" href="{% url 'proc-adm-andamento-list' %}" role="button" aria-expanded="false"><h4>{{ andamentos }}</h4></a>
+                            <h6>R$ {{ total_credito_geral }}</h6>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                         <!-- Usado para ocupar espaço -->
+                    </div>
+                </div>  
+                <hr>
+                <h5 style="text-align: center; background-color: #5c5c5c; color: white;">Filtros de busca</h5>
+                <hr>
+                <form method="get" action="{% url 'proc-adm-list' %}">
+                    <div class="row">
+                        <div class="col">
+                            <label for="numero">Número do Processo</label>
+                            <input type="text" class="form-control" name="numero" id="" value="{{ request.GET.numero }}" autocomplete="off">
+                        </div>
+                        <div class="col">
+                            <label for="municipio">Município</label>
+                            <select name="municipio" id="municipio" class="form-control">
+                                <option value="">--------</option>
+                                {% for municipio in municipios %}
+                                    {% with municipio_selecionado=request.GET.municipio|stringformat:"s" %} <!--stringformat:"s" Converte o valor para String | With serve para manter o valor selecionado no select, após clicar em Buscar-->
+                                    <option value="{{ municipio.id }}" {% if municipio.id|stringformat:"s" == municipio_selecionado %}selected{% endif %}>{{ municipio.nome }}</option>
+                                    {% endwith %}
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+                            <a href="{% url 'proc-adm-list' %}" class="btn btn-danger btn-sm">Limpar</a>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <table class="table table-striped" id="tabela-listar">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Processo</th>
+                            <th>Município</th>
+                            <th>Contribuinte</th>
+                            <th>CPF/CNPJ</th>
+                            {% if user.is_staff %} <!--Membro da equipe = is_staff-->
+                                <th>Usuário</th>
+                                <th>Criado em</th>
+                            {% endif %}        
+                            <th>Ações</th>
+                            <th>Andamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for processo in object_list %}
+                        <tr>
+                            <td><b>{{ processo.numero }}</b></td>
+                            <td>{{ processo.municipio }}</td>
+                            <td>{{ processo.nome_contribuinte }}</td>
+                            <td>{{ processo.documento }}</td>
+
+                            {% if user.is_staff %} <!--Membro da equipe = is_staff-->
+                                <td>{{ processo.usuario_criador.get_full_name }}</td>
+                                <td>{{ processo.data_criacao|date:"d/m/Y" }}</td> <!--Formatei a data para aparecer neste formato na minha Data-table -->
+                            {% endif %}
+                            
+                                <td>
+                                    <a href="{% url 'proc-adm-view' processo.pk %}?{% for key, value in request.GET.items %}{{ key }}={{ value }}{% if not forloop.last %}&{% endif %}{% endfor %}"><img src="{% static 'img/olho3.png' %}" width="30"></a>
+                                    
+                                    {% if user.is_staff %} <!--Membro da equipe = is_staff-->
+                                        <a href="{% url 'proc-adm-update' processo.pk %}?{% for key, value in request.GET.items %}{{ key }}={{ value }}{% if not forloop.last %}&{% endif %}{% endfor %}"><img src="{% static 'img/botao-editar.png' %}" width="20"></a>
+                                    {% endif %}
+
+                                    {% if user.is_superuser %} <!-- Super Usuário -->
+                                        <a href="{% url 'proc-adm-delete' processo.pk %}?{% for key, value in request.GET.items %}{{ key }}={{ value }}{% if not forloop.last %}&{% endif %}{% endfor %}"><img src="{% static 'img/excluir.png' %}" width="20"></a>
+                                    {% endif %}
+                                </td>
+                            <td> 
+                                <!-- {% if user.is_staff %}
+                                    <a href="{% url 'andamento-adm-create' processo.pk %}"><img src="{% static 'img/create-andamento.png' %}" width="25"></a>
+                                {% endif %} -->
+                                
+                                <a href="{% url 'andamento-adm-list-update' processo.pk %}?{% for key, value in request.GET.items %}{{ key }}={{ value }}{% if not forloop.last %}&{% endif %}{% endfor %}"><img src="{% static 'img/botao-editar.png' %}" width="20"></a>
+                                
+                                <a href="{% url 'andamento-adm-list' processo.pk %}"><img src="{% static 'img/arquivo.png' %}" width="25"></a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+        </div>   
+    </div>
+    <br>
+    {% endblock %}
+
+    {% block scripts %}
+    <!-- Importação JS da minha 'datatable' -->
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.6/datatables.min.js"></script>
+
+    <script>
+        // Para transformar minha lista em um datatable
+        $(document).ready(function(){
+            $('#tabela-listar').DataTable({
+                responsive: true,
+                "ordering": false, // Remove as opções das colunas de ordenar a tabela.
+                "searching": false, // Remove o campo input de busca "search"
+                // "bSort": false,
+                "aaSorting": [],
+                "pageLength": 5,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "Nenhum processo filtrado",
+                    "info": "Ativos: _TOTAL_ ",
+                    "infoEmpty": "Ativos: 0",
+                    "infoFiltered": "",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ processos",
+                    "loadingRecords": "A carregar dados...",
+                    "processing": "A processar...",
+                    // "search": "Buscar:",
+                    "zeroRecords": "Nenhum processo filtrado",
+                    "paginate": {
+                        "first": "Primeiro",
+                        "last": "Último",
+                        "next": "Próximo",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": ordem crescente",
+                        "sortDescending": ": ordem decrescente"
+                    }
+                }
+            });
+
+        });
+
+    </script>
+
+    <script>
+        document.body.style.zoom = "80%";
+    </script>
+
+{% endblock %} 
+

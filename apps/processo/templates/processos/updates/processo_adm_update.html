@@ -1,0 +1,244 @@
+<!-- Formulário de update de Processo Administrativo-->
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% load widget_tweaks %} 
+
+{% block titulo %}
+    <title>Editar Processo</title>
+{% endblock %}
+
+{% block conteudo %} 
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #5c5c5c;">
+                <h5 style="text-align: center;">Editar Processo</h5>
+            </div>
+            <div class="card-body">
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for atributo in dados_processo %}
+                        <h5>Processo: {{ atributo.numero }}</h5>     
+                        {% if user.is_superuser %}
+                            <div class="col">
+                                <label for="ativo">Ativo</label>
+                                <input type="checkbox" name="ativo" {% if object.ativo %} checked {% endif %}> <!--Se o objeto estiver ativo, o checkbox estará selecionado 'checked'-->
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    <hr>
+                    <div class="row"> <!-- w-50 (colocar para diminuir o tamanho do campo input)-->
+                        <div class="col">
+                            <label for="uf">UF <b>*</b></label>
+                            {% render_field form.uf class="form-control" id="uf"%}
+                        </div>
+                        <div class="col">
+                            <label for="municipio">Município <b>*</b></label>
+                            {% render_field form.municipio class="form-control" id="municipio"%}
+                        </div>
+                        <div class="col">
+                            <label for="data_inicial">Período</label>
+                            {% render_field form.data_inicial class="form-control" id="data_inicial" placeholder="  /  /    "%}
+                        </div>
+                        <div class="col">
+                            <label for="data_final"><!--Período Final--></label>
+                            {% render_field form.data_final class="form-control" id="data_final" placeholder="  /  /    "%}
+                        </div>
+                        <div class="col">
+                            <label for="data_div_ativa">D.A</label>
+                            {% render_field form.data_div_ativa class="form-control" id="data_div_ativa" placeholder="  /  /    "%}
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="valor_atributo">Valor do Tributo</label>
+                            {% render_field form.valor_atributo class="mask-money form-control" type="text" maxlength="14" placeholder="R$"  id="valor_atributo" autocomplete="off"%}
+                        </div>
+                        <div class="col">
+                            <label for="valor_multa">Valor da Multa</label>
+                            {% render_field form.valor_multa class="mask-money form-control" type="text" maxlength="14" placeholder="R$" id="valor_multa" autocomplete="off"%}
+                        </div>
+                        <div class="col">
+                            <label for="valor_credito">Valor do Crédito</label>
+                            {% render_field form.valor_credito class="mask-money form-control" type="text" maxlength="14" placeholder="R$" id="valor_credito" autocomplete="off"%}
+                        </div>
+                        <div class="col">
+                            <label for="valor_atualizado">Valor do Atualizado</label>
+                            {% render_field form.valor_atualizado class="mask-money form-control" type="text" maxlength="14" placeholder="R$" id="valor_atualizado" autocomplete="off"%}
+                        </div>  
+                        <div class="col">
+                            <label for="data_valor_atualizado">Data Valor Atualizado</label>
+                            {% render_field form.data_valor_atualizado class="form-control" id="data_valor_atualizado" placeholder="  /  /    "%}
+                        </div> 
+                    </div>    
+                    <br><br>
+                    <h5>Contribuinte</h5>
+                    <hr>
+                    <!-- <br> -->
+                    <div class="row">
+                        <div class="col">
+                            {% if form.documento.errors %} <!-- Se a validação 'unique' do atributo 'documento (CPJ / CNPJ)' retornar erro de registro já utilizado, irá abrir um alerta informando que o registro já existe-->
+                            <div class="alert alert-danger" role="alert"  style="height: 50px; width: px;">
+                                <h6>{{ form.documento.errors }}</h6>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome_contribuinte">Nome / Razão Social <b>*</b></label>
+                            {% render_field form.nome_contribuinte class="form-control" id="nome_contribuinte" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="tipo_pessoa">Tipo de Pessoa <b>*</b></label>
+                            {% render_field form.tipo_pessoa class="form-control" id="tipo_pessoa" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="documento">CPF / CNPJ <b>*</b></label>
+                            {% render_field form.documento class="form-control" id="documento" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="nome_fantasia">Nome Fantasia</label>
+                            {% render_field form.nome_fantasia class="form-control" id="nome_fantasia" autocomplete="off"%}
+                        </div> 
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="endereco">Logradouro / N° / Bairro <b>*</b></label>
+                            {% render_field form.endereco class="form-control" id="endereco" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="complemento">Complemento</label>
+                            {% render_field form.complemento class="form-control" id="complemento" autocomplete="off"%}
+                        </div> 
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="uf_contribuinte">UF</label>
+                            {% render_field form.uf_contribuinte class="form-control" id="uf_contribuinte" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="municipio_contribuinte">Município</label>
+                            {% render_field form.municipio_contribuinte class="form-control" id="municipio_contribuinte" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="cep">CEP</label>
+                            {% render_field form.cep class="form-control" placeholder="     -   " id="cep" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="email">E-mail</label>
+                            {% render_field form.email class="form-control" placeholder="@" id="email" autocomplete="off" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="celular">Celular</label>
+                            {% render_field form.celular class="form-control" placeholder="( )      -    " id="celular" autocomplete="off"%}
+                        </div> 
+                        <div class="col">
+                            <label for="telefone">Telefone</label>
+                            {% render_field form.telefone class="form-control" placeholder="( )     -    " id="telefone" autocomplete="off"%}
+                        </div> 
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-success btn-sm">Salvar</button>
+                    <a href="{{ url_retorno }}" class="btn btn-danger btn-sm">Cancelar</a>          
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br>
+{% endblock %}
+
+{% block scripts %}
+    <!-- Importação do arquivo dentro da pasta static/js para usar máscaras nos campos input -->
+    <script src="{% static 'js/jquery.mask.min.js' %}"></script>
+
+    <!-- Importações para utilizar maskMoney -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+
+    <!-- Configuração de máscaras nos campos inputs, buscando o campo através do ID -->
+    <script>
+        $(document).ready(function(){
+            $("#numero").mask("00000/0000", {reverse: true});
+            $("#cep").mask('00000-000');
+            $("#telefone").mask('(00) 0000-0000');
+            $("#celular").mask('(00) 00000-0000');
+
+            // ---------------------------------
+            $('#valor_atributo').maskMoney({
+                thousands: '.',
+                decimal: ',',
+            });
+            
+            $('form').on('submit', function() {
+                // Remove a máscara monetária antes de enviar o formulário
+                var valor = $('#valor_atributo').maskMoney('unmasked')[0];
+                $('#valor_atributo').val(valor);
+            });
+
+            // ---------------------------------
+            $('#valor_multa').maskMoney({
+                thousands: '.',
+                decimal: ',',
+            });
+            
+            $('form').on('submit', function() {
+                // Remove a máscara monetária antes de enviar o formulário
+                var valor = $('#valor_multa').maskMoney('unmasked')[0];
+                $('#valor_multa').val(valor);
+            });
+
+            // ---------------------------------
+            $('#valor_credito').maskMoney({
+                thousands: '.',
+                decimal: ',',
+            });
+            
+            $('form').on('submit', function() {
+                // Remove a máscara monetária antes de enviar o formulário
+                var valor = $('#valor_credito').maskMoney('unmasked')[0];
+                $('#valor_credito').val(valor);
+            });
+
+            // ---------------------------------
+            $('#valor_atualizado').maskMoney({
+                thousands: '.',
+                decimal: ',',
+            });
+            
+            $('form').on('submit', function() {
+                // Remove a máscara monetária antes de enviar o formulário
+                var valor = $('#valor_atualizado').maskMoney('unmasked')[0];
+                $('#valor_atualizado').val(valor);
+            });
+
+            // Função para aplicar máscara de CPF ou CNPJ de acordo com a seleção do campo select de 'Tipo pessoa'
+            function aplicarMascara(){
+                var opcaoSelecionada = $('#tipo_pessoa').val();
+                var campoDoc = $('#documento');
+
+                if(opcaoSelecionada === 'Física'){
+                    campoDoc.mask('000.000.000-00', {reverse: true});
+                } else {
+                    campoDoc.mask('00.000.000/0000-00', {reverse: true});
+                }
+
+            }
+
+            aplicarMascara();
+            $('#tipo_pessoa').change(aplicarMascara);
+        })
+    </script>
+
+    <script>
+        document.body.style.zoom = "80%"; // Para configurar o zoom da página html, para não ficar grande.
+    </script>
+    
+{% endblock %}
+
