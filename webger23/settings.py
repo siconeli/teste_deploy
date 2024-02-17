@@ -115,8 +115,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql', 
         'NAME': 'webger23',
         'USER': 'postgres',
-        'PASSWORD': 'Clodomir753$',
-        # 'PASSWORD': 'abcd1590',
+        # 'PASSWORD': 'Clodomir753$',
+        'PASSWORD': 'abcd1590',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -167,11 +167,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #================================================================================================================
 # Arquivos de Media (Para salvar os arquivos em endereço local, na mesma máquina do código) (USAR DURANTE O DESENVOLVIMENTO)
 MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Arquivos de Media (Para salvar os arquivos em um servidor externo, acessado via IP) (USAR DURANTE A PRODUÇÃO)
-MEDIA_ROOT = ('//10.0.0.3/webger23/') # Encaminha o arquivo para o Servidor, quando é realizado um upload.
+# MEDIA_ROOT = ('//10.0.0.3/webger23/') # Encaminha o arquivo para o Servidor, quando é realizado um upload.
 # Servidor utilizado: MyCloud EX2 Ultra
 #================================================================================================================
 
