@@ -30,7 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['18.221.29.129'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo sem o "https"
 
 # Configuração de origens confiáveis, para funcionamento do CSRF_TOKEN
-CSRF_TRUSTED_ORIGINS = ['http://18.221.29.129'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo
+CSRF_TRUSTED_ORIGINS = ['http://18.221.29.129:8080'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo
 
 # Application definition
 
