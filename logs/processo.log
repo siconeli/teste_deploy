@@ -478,3 +478,4 @@ Level: ERROR | Data: 2024-02-15 16:50:15,816 | Modulo: views | Aviso: Erro ao ed
 Level: ERROR | Data: 2024-02-15 16:50:27,261 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [Errno 13] Permission denied: 'media/Arquivo\\Oficio Energisa.docx'
 Level: ERROR | Data: 2024-02-15 16:50:55,323 | Modulo: views | Aviso: Erro ao criar objeto - View: AndamentoAdmCreate - Erro: [Errno 13] Permission denied: 'media/arquivo/Oficio Energisa.docx'
 Level: ERROR | Data: 2024-02-15 16:54:47,505 | Modulo: views | Aviso: Erro ao editar objeto - View: AndamentoAdmUpdate - Erro: [Errno 13] Permission denied: 'media/Arquivo\\Oficio Energisa.docx'
+Level: INFO | Data: 2024-02-18 00:43:15,287 | Modulo: signals | Aviso: Usuario - "admin", realizou "Login" a partir do endereco IP: 127.0.0.1
