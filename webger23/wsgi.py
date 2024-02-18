@@ -13,7 +13,7 @@ from django.core.wsgi import get_wsgi_application
 
 # from dj_static import Cling, MediaCling # Usado durante a Produção.
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webger23.settings')
+os.environ.setdefault['DJANGO_SETTINGS_MODULE'] = 'webger23.settings'
 
 application = get_wsgi_application()
  
