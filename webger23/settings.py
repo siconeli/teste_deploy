@@ -64,15 +64,15 @@ MIDDLEWARE = [
 # ----------------------------------------------------------------------------------
 # SESSIONS SETTINGS
 # Configuração para usar o banco de dados para armazenar sessões
-# SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 # # Configuração para criptografar os dados da sessão
-# SESSION_COOKIE_SECURE = True  # Defina como True se estiver usando HTTPS
-# SESSION_COOKIE_HTTPONLY = True
-# SESSION_COOKIE_SAMESITE = 'Strict'
+SESSION_COOKIE_SECURE = True  # Defina como True se estiver usando HTTPS
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SAMESITE = 'Strict'
 
 # Configuração para especificar a duração da sessão (opcional)
-# SESSION_COOKIE_AGE = 3600  # Tempo em segundos (por exemplo, 3600 segundos = 1 hora)
+SESSION_COOKIE_AGE = 86400  # Tempo em segundos (por exemplo, 3600 segundos = 1 hora)
 # ------------------------------------------------------------------------------------
 
 
