@@ -50,15 +50,14 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware', 
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # whitenoise para modo de produção
+   'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware', # IMPORTANTE - Comentei essa linha para que eu consigo abrir arquivos PDF em um iframe através do google chrome, pois o XframeOptions por segurança não permite, ao colocar o sistema em produção irei descomentar a linha para que a segurança se reestabeleça.
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware', # IMPORTANTE - Comentei essa linha para que eu consigo abrir arquivos PDF em um iframe através do google chrome, pois o XframeOptions por segurança não permite, ao colocar o sistema em produção irei descomentar a linha para que a segurança se reestabeleça.
 
 ]
 
@@ -68,8 +67,6 @@ MIDDLEWARE = [
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = False
-
-CORS_ALLOW_ALL_ORIGINS = True
 # ------------------------------------------------------------------------------------
 
 
