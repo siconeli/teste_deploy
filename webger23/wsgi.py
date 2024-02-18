@@ -14,6 +14,6 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webger23.settings')
 
-application = get_wsgi_application() # Usado durante o Desenvolvimento 
+# application = get_wsgi_application() # Usado durante o Desenvolvimento 
 
-# application = Cling(MediaCling(get_wsgi_application())) # Usado durante a Produção.  
+application = Cling(MediaCling(get_wsgi_application())) # Usado durante a Produção.  
