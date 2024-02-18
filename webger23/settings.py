@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-l^j*v2e&&e@@21#+kd@5xdj7v#!e7-iwt%x(78e0=)7_2p+!%5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '64e5-191-222-170-47.ngrok-free.app'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo sem o "https"
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '18.221.29.129'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo sem o "https"
 
 # Configuração de origens confiáveis, para funcionamento do CSRF_TOKEN
 CSRF_TRUSTED_ORIGINS = ['https://64e5-191-222-170-47.ngrok-free.app'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo
