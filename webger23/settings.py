@@ -68,7 +68,7 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 # # Configuração para criptografar os dados da sessão
 SESSION_COOKIE_SECURE = True  # Defina como True se estiver usando HTTPS
-SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_HTTPONLY = False
 SESSION_COOKIE_SAMESITE = 'Strict'
 
 # Configuração para especificar a duração da sessão (opcional)
