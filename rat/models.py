@@ -2,9 +2,9 @@ from django.db import models
 
 from django.contrib.auth import get_user_model
 
-from apps.processo.models import Base
+from processo.models import Base
 
-from apps.processo.models import MunicipioAdm
+from processo.models import MunicipioAdm
 
 class Funcionario(Base):
     nome = models.CharField(max_length=50)

@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic', # whitenoise para modo de desenvolvimento
-    'apps.core', # Aplicação core
-    'apps.processo', # Aplicação Processo
-    'apps.rat', # Aplicação Rat
+    'core', # Aplicação core
+    'processo', # Aplicação Processo
+    'rat', # Aplicação Rat
     'django_cleanup.apps.CleanupConfig', # Excluir arquivos da pasta de uploads após editar o registro e adicionar um novo arquivo.
     'widget_tweaks', # Biblioteca Widget - Muito importante - Torna possível eu criar um formulário HTML próprio sincronizado com as Class Based Views.
 ]

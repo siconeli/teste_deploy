@@ -8,9 +8,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('central-admin/', admin.site.urls), # Admin do Django
-    path('', include('apps.core.urls')),
-    path('', include('apps.processo.urls')),
-    path('', include('apps.rat.urls')),
+    path('', include('core.urls')),
+    path('', include('processo.urls')),
+    path('', include('rat.urls')),
     path('accounts/', include('django.contrib.auth.urls')), # Para fazer a autenticação de Login/Logout, não é preciso criar urls.
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

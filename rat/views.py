@@ -1,7 +1,7 @@
 from typing import Any
 from django.shortcuts import render
 from .models import Atendimento, Funcionario
-from apps.processo.models import MunicipioAdm
+from processo.models import MunicipioAdm
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.list import ListView
 from django.views.generic import TemplateView, View
