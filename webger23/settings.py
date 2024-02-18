@@ -102,25 +102,25 @@ WSGI_APPLICATION = 'webger23.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # Utilizado em modo de produção - Para utilizar o banco nativo do django - SQLite3
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-# Utiliza em modo de Desenvolvimento - PostgreSQL pgAdmin4
 DATABASES = {
-    'default': {  
-        'ENGINE': 'django.db.backends.postgresql', 
-        'NAME': 'webger23',
-        'USER': 'postgres',
-        # 'PASSWORD': 'Clodomir753$',
-        'PASSWORD': 'abcd1590',
-        'HOST': 'localhost',
-        'PORT': '5432',
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# Utiliza em modo de Desenvolvimento - PostgreSQL pgAdmin4
+# DATABASES = {
+#     'default': {  
+#         'ENGINE': 'django.db.backends.postgresql', 
+#         'NAME': 'webger23',
+#         'USER': 'postgres',
+#         # 'PASSWORD': 'Clodomir753$',
+#         'PASSWORD': 'abcd1590',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
