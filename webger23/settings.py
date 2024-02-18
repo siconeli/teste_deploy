@@ -30,7 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['18.221.29.129'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo sem o "https"
 
 # Configuração de origens confiáveis, para funcionamento do CSRF_TOKEN
-CSRF_TRUSTED_ORIGINS = ['http://18.221.29.129:8080'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo
+CSRF_TRUSTED_ORIGINS = ['http://18.221.29.129'] # Aqui eu coloco o código gerado pelo ngrok para acesso externo
 
 # Application definition
 
@@ -50,29 +50,26 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', 
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', # whitenoise para modo de produção
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware', # IMPORTANTE - Comentei essa linha para que eu consigo abrir arquivos PDF em um iframe através do google chrome, pois o XframeOptions por segurança não permite, ao colocar o sistema em produção irei descomentar a linha para que a segurança se reestabeleça.
+    'django.middleware.clickjacking.XFrameOptionsMiddleware', # IMPORTANTE - Comentei essa linha para que eu consigo abrir arquivos PDF em um iframe através do google chrome, pois o XframeOptions por segurança não permite, ao colocar o sistema em produção irei descomentar a linha para que a segurança se reestabeleça.
 
 ]
 
 # ----------------------------------------------------------------------------------
 # SESSIONS SETTINGS
 # Configuração para usar o banco de dados para armazenar sessões
-SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False
 
-# # Configuração para criptografar os dados da sessão
-SESSION_COOKIE_SECURE = True  # Defina como True se estiver usando HTTPS
-SESSION_COOKIE_HTTPONLY = False
-SESSION_COOKIE_SAMESITE = 'Strict'
-
-# Configuração para especificar a duração da sessão (opcional)
-SESSION_COOKIE_AGE = 86400  # Tempo em segundos (por exemplo, 3600 segundos = 1 hora)
+CORS_ALLOW_ALL_ORIGINS = True
 # ------------------------------------------------------------------------------------
 
 
