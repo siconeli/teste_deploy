@@ -159,9 +159,9 @@ USE_TZ = True # Utilizado em modo de Desenvolvimento
 STATIC_URL = '/static/' # Usado durante o desenvolvimento
 # STATIC_ROOT = str(BASE_DIR / 'staticfiles') # Usado durante a produção
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+# ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
