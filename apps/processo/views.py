@@ -9,7 +9,6 @@ import os # Módulo para trabalhar com pastas e arquivos
 from docx2pdf import convert # Módulo para converter .docx em pdf
 from PyPDF2 import PdfMerger # Módulo para mesclar pdf
 from django.core.exceptions import ValidationError
-import pythoncom
 from django.http import HttpResponse
 import logging # Módulo para registro de logs
 logger = logging.getLogger('auditoria_erros') # 'logger' recebe o logger configurado no settings.
@@ -172,46 +171,6 @@ class AndamentoAdmCreate(CreateView):
             # Preencher o atributo 'criador_andamento_adm' com o ID do usuário logado.
             form.instance.usuario_criador = self.request.user 
 
-            # Preencher o atributo 'funcionario' com o nome completo do usuário logado.
-            # form.instance.funcionario = self.request.user.get_full_name()
-
-            # pythoncom.CoInitialize() # Para não ocorrer o erro  "Exception Value:(-2147221008, 'CoInitialize não foi chamado.', None, None)" quando utilizado código para converter arquivos
-
-            """
-            # Código para conversão do arquivo enviado, de .docx(word) para .pdf
-            
-            # É obrigatório ter o OFFICE instalado na máquina!
-
-            # Quando feito o upload, o arquivo é inserido e tratado no diretório 'media' e depois enviado para o servidor de arquivos externo configurado no settings.
-            """
-            # # Antes de salvar o formulário, verifica se um arquivo Word foi enviado
-            # if 'arquivo' in self.request.FILES:
-            #     arquivo = self.request.FILES['arquivo']
-            #     print(arquivo)
-                
-            #     if arquivo.name.endswith('.docx'): # Se o arquivo termina com '.docx'
-            #         # Cria um arquivo temporário para a conversão
-            #         word_temporario = os.path.join('media/arquivo/', arquivo.name)
-            #         with open(word_temporario, 'wb') as arquivo_temporario:
-            #             for chunk in arquivo.chunks():
-            #                 arquivo_temporario.write(chunk)
-
-            #         # Converte o arquivo Word para PDF
-            #         pdf_temporario = word_temporario.replace('.docx', '.pdf')
-            #         convert(word_temporario, pdf_temporario)
-
-            #         # Abri o arquivo PDF convertido e atualize o campo 'arquivo' no formulário
-            #         with open(pdf_temporario, 'rb') as pdf:
-            #             form.instance.arquivo.save(pdf_temporario, pdf)
-
-            #         # Certifique-se de que o arquivo Word temporário seja excluído
-            #         os.remove(word_temporario)
-
-            #         # Certifique-se de que o arquivo PDF temporário seja excluído
-            #         os.remove(pdf_temporario)
-                    
-            # pythoncom.CoUninitialize() # Para não ocorrer o erro "Exception Value:(-2147221008, 'CoInitialize não foi chamado.', None, None)" quando utilizado códigos para converter arquivos
-        
             result = super().form_valid(form)
             
             # Registre a operação de criação na auditoria
@@ -530,37 +489,6 @@ class AndamentoAdmUpdate(UpdateView):
         try:
             objeto_original = self.get_object()
             objeto_atualizado = form.instance
-
-            pythoncom.CoInitialize() # Para não ocorrer o erro  "Exception Value:(-2147221008, 'CoInitialize não foi chamado.', None, None)" quando utilizado código para converter arquivos
-
-            # Código para conversão do arquivo enviado, de .docx(word) para .pdf
-            # Antes de salvar o formulário, verifica se um arquivo Word foi enviado
-            if 'arquivo' in self.request.FILES:
-                arquivo = self.request.FILES['arquivo']
-                print(arquivo)
-                
-                if arquivo.name.endswith('.docx'): # Se o arquivo termina com '.docx'
-                    # Cria um arquivo temporário para a conversão
-                    word_temporario = os.path.join('media/Arquivo', arquivo.name)
-                    with open(word_temporario, 'wb') as arquivo_temporario:
-                        for chunk in arquivo.chunks():
-                            arquivo_temporario.write(chunk)
-
-                    # Converte o arquivo Word para PDF
-                    pdf_temporario = word_temporario.replace('.docx', '.pdf')
-                    convert(word_temporario, pdf_temporario)
-
-                    # Abra o arquivo PDF convertido e atualize o campo 'arquivo' no formulário
-                    with open(pdf_temporario, 'rb') as pdf:
-                        form.instance.arquivo.save(pdf_temporario, pdf)
-
-                    # Certifique-se de que o arquivo Word temporário seja excluído
-                    os.remove(word_temporario)
-
-                    # Certifique-se de que o arquivo PDF temporário seja excluído
-                    os.remove(pdf_temporario)
-                    
-                    pythoncom.CoUninitialize() # Para não ocorrer o erro "Exception Value:(-2147221008, 'CoInitialize não foi chamado.', None, None)"
 
             campos_alterados = []
 
