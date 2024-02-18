@@ -157,13 +157,13 @@ USE_TZ = True # Utilizado em modo de Desenvolvimento
 
 # Configuração dos arquivos estáticos: css, js, imagens
 STATIC_URL = '/static/' # Usado durante o desenvolvimento
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATIC_ROOT = str(BASE_DIR / 'staticfiles') # Usado durante a produção
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 #================================================================================================================
 # Arquivos de Media (Para salvar os arquivos em endereço local, na mesma máquina do código) (USAR DURANTE O DESENVOLVIMENTO)
