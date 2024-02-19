@@ -157,19 +157,13 @@ USE_TZ = True # Utilizado em modo de Desenvolvimento
 
 # Configuração dos arquivos estáticos: css, js, imagens
 STATIC_URL = '/static/' # Usado durante o desenvolvimento
-# STATIC_ROOT = str(BASE_DIR / 'staticfiles') # Usado durante a produção
-
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static'),
-# ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 #================================================================================================================
 # Arquivos de Media (Para salvar os arquivos em endereço local, na mesma máquina do código) (USAR DURANTE O DESENVOLVIMENTO)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Arquivos de Media (Para salvar os arquivos em um servidor externo, acessado via IP) (USAR DURANTE A PRODUÇÃO)
 # MEDIA_ROOT = ('//10.0.0.3/webger23/') # Encaminha o arquivo para o Servidor, quando é realizado um upload.
